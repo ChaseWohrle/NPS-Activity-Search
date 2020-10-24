@@ -40,3 +40,50 @@ li, img {
 .hidden {
   display: none;
 }
+
+h1 {
+  color: black;
+  font-size: large;
+  font-family: Georgia, serif;
+  text-align: center;
+  margin: 0 0 30px 10px;
+}
+
+h2 {
+  color: black;
+  font-size: large;
+  font-family: Georgia, serif;
+  text-align: center;
+  margin: 0 10px;
+}
+
+/* LARGER THAN 700PX */
+@media (min-width: 700px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .main-nav-list-item {
+    float:left;
+    width: 25%;
+  }
+  .box {
+    width: 47%;
+    float: left;
+  }
+  .box:nth-child(odd) {
+    margin-right: 6%;
+  }
+}
+
+  /* LARGER THAN 1024 PX */ 
+  @media (min-width: 1024px) {
+    .box {
+      width: 29.33%;
+      float: left;
+      margin-right: 6%;
+    }
+    .box:nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
