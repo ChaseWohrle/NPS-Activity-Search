@@ -93,6 +93,10 @@ h2 {
   p {
     font-size: large;
   }  
+  * {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media all and (min-width: 400px, orientation: landscape) {
@@ -109,6 +113,10 @@ h2 {
   .form {
     margin: 0; 
   }  
+  * {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media all and (min-width: 800px, orientation: portrait) {
@@ -120,6 +128,10 @@ h2 {
   p {
     font-size: large;
   }  
+  * {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media all and (min-width: 400px, orientation: portrait) {
@@ -136,4 +148,8 @@ h2 {
   .form {
     margin: 0; 
   }  
+  * {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
