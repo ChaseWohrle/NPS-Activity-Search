@@ -1,9 +1,33 @@
 * {
   box-sizing: border-box;
+  font-family: 'OCR A Std', monospace;
 }
 
+.background-image {
+  background: url('NPS_ActSeach_Background.jpeg') center center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  max-width:100%;
+  border: 5px solid wheat;
+  height:500px;
+  padding: 50px;
+  margin: auto;
+  font-family: 'OCR A Std', monospace;
+}
+
+h1#backgroundPic {
+  text-align: center;
+  color: whitesmoke;
+  font-size: xx-large;
+  }
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'OCR A Std', monospace;
+  display: unset;
+  margin: unset;
+  background-color: limegreen;
 }
 
 button, input[type="text"] {
@@ -24,13 +48,15 @@ li {
   padding: 10px;
 }
 
-li, img {
+li {
   max-width: 500px;
 }
 
 .container {
   max-width: 600px;
   margin: 0 auto;
+  padding: 10px;
+  text-align: center;
 }
 
 .error-message {
@@ -44,7 +70,7 @@ li, img {
 h1 {
   color: black;
   font-size: large;
-  font-family: Georgia, serif;
+  font-family: 'OCR A Std', monospace;
   text-align: center;
   margin: 0 0 30px 10px;
 }
@@ -52,38 +78,62 @@ h1 {
 h2 {
   color: black;
   font-size: large;
-  font-family: Georgia, serif;
+  font-family: 'OCR A Std', monospace;
   text-align: center;
   margin: 0 10px;
 }
 
-/* LARGER THAN 700PX */
-@media (min-width: 700px) {
-  body {
-    width: 80%;
-    margin: 0 auto;
+/* MEDIA QUERIES */
+@media all and (min-width: 800px, orientation: landscape) {
+  .group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px; 
   }
-  .main-nav-list-item {
-    float:left;
-    width: 25%;
-  }
-  .box {
-    width: 47%;
-    float: left;
-  }
-  .box:nth-child(odd) {
-    margin-right: 6%;
-  }
+  p {
+    font-size: large;
+  }  
 }
 
-  /* LARGER THAN 1024 PX */ 
-  @media (min-width: 1024px) {
-    .box {
-      width: 29.33%;
-      float: left;
-      margin-right: 6%;
-    }
-    .box:nth-child(3n+3) {
-      margin-right: 0;
-    }
+@media all and (min-width: 400px, orientation: landscape) {
+  .group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px; 
+    flex-wrap: wrap; 
   }
+  p {
+    font-size: large;
+  }  
+
+  .form {
+    margin: 0; 
+  }  
+}
+
+@media all and (min-width: 800px, orientation: portrait) {
+  .group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px; 
+  }
+  p {
+    font-size: large;
+  }  
+}
+
+@media all and (min-width: 400px, orientation: portrait) {
+  .group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px; 
+    flex-wrap: wrap; 
+  }
+  p {
+    font-size: large;
+  }  
+
+  .form {
+    margin: 0; 
+  }  
+}

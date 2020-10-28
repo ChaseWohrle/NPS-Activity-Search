@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NPS Activity Search</title>
+    <title>National Park Service Campground Search</title>
     <link rel="shortcut icon" href="">
     <link rel="stylesheet" href="index.css">
-</head>
-<body>
-  <div class="container"> 
-    <h1>NPS Activity Search</h1>
-    <br>
-    <img class="image" src="NPS_ActSeach_Background.jpeg" width="400" height="400">
+  </head>
+  <body>
+    <header>
+      <div class="background-image" >
+      <h1 id="backgroundPic">National Park Service Campground Search</h1>
+      </div> 
+    </header>
+    <main>
+      <div class="container"> 
       <form id="js-form">
-        <label for="search-term">Enter the number of parks desired</label>
-        <input type="text" name="search-term" id="search-qty">
-
-        <input type="submit" value="Go!">
+        <label for="search-term">Enter the state abbreviation of your search</label>
+        <input type="text" name="search-term" id="state" >
+        <input type="submit" value="Search">
       </form>
-
         <p id="js-error-message" class="error-message"></p>
         <section id="results" class="hidden">
           <h2>Search results</h2>
           <ul id="results-list">
           </ul>
         </section>
-    </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
-</body>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
