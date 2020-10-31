@@ -84,7 +84,7 @@ h2 {
 }
 
 /* MEDIA QUERIES */
-@media all and (min-width: 800px, orientation: landscape) {
+@media all and (min-width: 800px) {
   .group {
     display: flex;
     flex-direction: column;
@@ -96,10 +96,11 @@ h2 {
   * {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 }
 
-@media all and (min-width: 400px, orientation: landscape) {
+@media all and (min-width: 400px) {
   .group {
     display: flex;
     flex-direction: row;
@@ -116,10 +117,11 @@ h2 {
   * {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 }
 
-@media all and (min-width: 800px, orientation: portrait) {
+@media all and (min-width: 800px) {
   .group {
     display: flex;
     flex-direction: column;
@@ -131,10 +133,11 @@ h2 {
   * {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 }
 
-@media all and (min-width: 400px, orientation: portrait) {
+@media all and (min-width: 400px) {
   .group {
     display: flex;
     flex-direction: row;
@@ -151,5 +154,6 @@ h2 {
   * {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 }
