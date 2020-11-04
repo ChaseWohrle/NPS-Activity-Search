@@ -5,8 +5,8 @@ function watchForm() {
   $('#js-form').submit(event => {
     event.preventDefault();
     const state = $('#state').val();
-    if (!state ) {
-      getResults('');
+    if (state.length != 2) {
+      alert('Use abbreviation of a valid US state; Ex.: CA, Ca, or ca');
     } else {
       getResults(state);
     }
@@ -28,17 +28,22 @@ function getResults(state) {
     });
 }
 
+
 function displayResults(responseJson) {
   $('#results-list').empty();
   let searchResults = responseJson['data']; 
-  for (let i = 0; i < searchResults.length; i++) {
-   $('#results-list').append(
-     `<li><h3>${searchResults[i].name}</h3>
-      <p><a href="${searchResults[i].directionsUrl}">${searchResults[i].description}</a></p>
-      <p>If available, a Campground Home URL will appear here: ${searchResults[i].url}</p>
-      </li>`
-      )
-  };
+  if (searchResults.length == 0) {
+    alert('Use abbreviation of a valid US state; Ex.: CA, Ca, or ca');
+  } else {
+    for (let i = 0; i < searchResults.length; i++) {
+     $('#results-list').append(
+       `<li><h3>${searchResults[i].name}</h3>
+        <p><a href="${searchResults[i].directionsUrl}" target="_blank">${searchResults[i].description}</a></p>
+        <p>If available, a Campground Home URL will appear here: ${searchResults[i].url}</p>
+        </li>`
+        ) 
+    };
+  }
   $('#results').removeClass('hidden');
 };
 
