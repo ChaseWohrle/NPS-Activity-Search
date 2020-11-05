@@ -40,6 +40,17 @@ function displayResults(responseJson) {
        `<li><h3>${searchResults[i].name}</h3>
         <p><a href="${searchResults[i].directionsUrl}" target="_blank">${searchResults[i].description}</a></p>
         <p>If available, a Campground Home URL will appear here: ${searchResults[i].url}</p>
+        <iframe 
+          width=""
+          height=""
+          frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/v1/view
+          ?key=AIzaSyBcEV7NTUy_BlCJ8Lrl6E9rjrUdOiybcew
+          &center=${searchResults[i].latitude},${searchResults[i].longitude}
+          &zoom=18
+          &maptype=satellite"
+        allowfullscreen>
+        </iframe>
         </li>`
         ) 
     };
