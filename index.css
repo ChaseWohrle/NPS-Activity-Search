@@ -1,7 +1,9 @@
 * {
   box-sizing: border-box;
   font-family: 'OCR A Std', monospace;
-  color: black;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .background-image {
@@ -20,8 +22,9 @@
 
 h1#backgroundPic {
   text-align: center;
-  color: whitesmoke;
+  color: black;
   font-size: xx-large;
+  -webkit-text-stroke: 1px white;
   }
 
 body {
@@ -41,23 +44,24 @@ button:hover {
 
 ul {
   list-style: none;
+  text-align: center;
   padding: 0;
   margin: 0;
 }
 
 li {
   padding: 10px;
-}
-
-li {
   max-width: 500px;
 }
+
 
 .container {
   max-width: 600px;
   margin: 0 auto;
   padding: 10px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .error-message {
