@@ -4,4 +4,6 @@ Specifically, campground names, descriptions,links to directions and regulations
 Users cannot access submit a search without inputting a valid US state. 
 App Live Link: https://chasewohrle.github.io/NPS-Activity-Search/
 Please see the excerpt below from file "NPS Sample Search.png" for an example of the end result of a user search. 
-![Sample Search](NPS_Sample_Search.png "Title")
+<img src="NPS_Sample_Search.png"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" />
