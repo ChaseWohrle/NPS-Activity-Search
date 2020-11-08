@@ -36,12 +36,13 @@ function displayResults(responseJson) {
     alert('Use abbreviation of a valid US state; Ex.: CA, Ca, or ca');
   } else {
     for (let i = 0; i < searchResults.length; i++) {
-     $('#results-list').append(
-       `<li><h3>${searchResults[i].name}</h3>
-        <p><a href="${searchResults[i].directionsUrl}" target="_blank">${searchResults[i].description}</a></p>
-        <p>If available, a Campground Home URL will appear here: <a href="${searchResults[i].url}" target="_blank">Home URL<a/></p>
+      $('#results-list').append(
+        `<li><h3>${searchResults[i].name}</h3>
+            <p>${searchResults[i].description}</p>
+            <p><a href="${searchResults[i].directionsUrl}" target="_blank">Link: Park Directions</p>
+            <p><a href="${searchResults[i].regulationsurl}" target="_blank">Link: Park Regulations</p>
         </li>`
-        ) 
+      )     
     };
   }
   $('#results').removeClass('hidden');
