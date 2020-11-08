@@ -39,8 +39,8 @@ function displayResults(responseJson) {
       $('#results-list').append(
         `<li><h3>${searchResults[i].name}</h3>
             <p>${searchResults[i].description}</p>
-            <p><a href="${searchResults[i].directionsUrl}" target="_blank">Link: Park Directions</p>
-            <p><a href="${searchResults[i].regulationsurl}" target="_blank">Link: Park Regulations</p>
+            <p><a href="${searchResults[i].directionsUrl}" target="_blank">Link: Park Directions</a></p>
+            <p><a href="${searchResults[i].regulationsurl}" target="_blank">Link: Park Regulations</a></p>
         </li>`
       )     
     };
