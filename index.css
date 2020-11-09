@@ -91,47 +91,10 @@ h2 {
 
 /* MEDIA QUERIES */
 @media all and (min-width: 800px) {
-  .group {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 100px; 
-  }
-  p {
-    font-size: large;
-  }  
-  * {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-}
-
-@media all and (min-width: 400px) {
-  .group {
+  .container {
     display: flex;
     flex-direction: column;
     margin-bottom: 100px; 
-    flex-wrap: wrap; 
-  }
-  p {
-    font-size: large;
-  }  
-
-  .form {
-    margin: 0; 
-  }  
-  * {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-}
-
-@media all and (min-width: 800px) {
-  .group {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 100px; 
   }
   p {
     font-size: large;
@@ -144,7 +107,7 @@ h2 {
 }
 
 @media all and (min-width: 400px) {
-  .group {
+  .container {
     display: flex;
     flex-direction: column;
     margin-bottom: 100px; 
